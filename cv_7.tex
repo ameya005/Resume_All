@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Ameya} % Your first name
+\familyname{Joshi} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{123 Broadway}{City, State 12345}
+\mobile{(+91) 9867938499}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ameyaj.005@gmail.com}
+\homepage{ameyajoshi005.wordpress.com}{My Blog} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Computer Vision Engineer}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+%\cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
+\cventry{2010--2014}{Bachelor of Engineering (Hons.), Electrical and Electronics Engineering}{Birla Institute of Technology and Science, Pilani}{Goa}{\textit{GPA -- 7.98}}{}
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{Vocational}
+
+\cventry{\small{June 2014--Present}}{Computer Vision Engineer}{\textsc{Ducere Technologies}}{Hyderabad, India}{}{Computer Vision Specialist. Embedded Systems Programmer 
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Worked on LeChal, the flagship product aimed at providing navigational freedom to the visually impaired 
+\item Implemented a system for image acquisition on STM32F4 ARM platform for image acquisition
+\item Designed the firmware architecture for a variant of the product.
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{\small{June 2014-Dec 2014}}{Computer Vision Intern}{\textsc{Ducere Technologies}}{Hyderabad, India}{}{Worked on designing obstacle avoidance systems for the blind
+\newline{}\newline{}
+\begin{itemize}
+
+\item Designed and implemented a prototype for a computer vision system for obstacle avoidance using stereo-vision and saliency modelling. 
+\item Designed and implemented a Tesseract OCR based document analysis module for a prototype
+\item Improved an existing project for No-ball detection (Cricket) to work with a single camera instead of stereo vision using motion heuristics
+
+\end{itemize}
+}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Publications SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\cvitem{}{Awardee of the BITS Merit-cum-Need Scholarship}
+
+
+
+
+%-------------------------------------------------
+%Projects
+%-------------------------------------------------
+
+\section {Projects}
+\cventry{June 2014--December 2014}{Computer Vision Intern}{\textsc{Ducere Technologies}}{Hyderabad, India}{}{Worked on designing obstacle avoidance systems for the blind}
+\begin{itemize}
+
+\item Designed and implemented a prototype for a computer vision system for obstacle avoidance using stereo-vision and saliency modelling. 
+\item Designed and implemented a Tesseract OCR based document analysis module for a prototype
+\item Improved an existing project for No-ball detection (Cricket) to work with a single camera instead of stereo vision using motion heuristics
+
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2010-2014}{Awardee of the BITS Merit-cum-Need Scholarship}
+\cvitem{2009}{National Talent Search Scholar, one of the top 500 students selected as a science scholar}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Basic}{\textsc{Android Java}}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX}
+\cvitem{Advanced}{C/C++}
+\subsection{Packages and Tools}
+\cvitem{Computer Vision}{OpenCV, MATLAB, SimpleCV}
+\cvitem{Machine Learning}{scikit-learn, OpenCV ML libraries}
+\cvitem{Embedded Platforms}{STM32 ARM, EFM32, AVR}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-3] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
