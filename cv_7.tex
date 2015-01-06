@@ -23,16 +23,16 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[8pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[scale=0.95]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.5cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{8cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -42,14 +42,15 @@
 \familyname{Joshi} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
+%\title{Curriculum Vitae}
 %\address{123 Broadway}{City, State 12345}
 \mobile{(+91) 9867938499}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
 \email{ameyaj.005@gmail.com}
-\homepage{ameyajoshi005.wordpress.com}{My Blog} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{Computer Vision Engineer}
+\homepage{ameyajoshi005.wordpress.com}{My Blog} 
+\extrainfo{\url{https://github.com/ameya005}}% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{Computer Vision Engineer}
 %\homepage{www.linkedin.com/profile/preview?vpa=pub&locale=en_US}{LinkedIn Profile}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -59,11 +60,10 @@
 \begin{document}
 
 \makecvtitle % Print the CV title
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
+\vspace*{-15mm}
 \section{Education}
 
 %\cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
@@ -83,13 +83,13 @@
 
 %\subsection{Vocational}
 
-\cventry{\small{June 2014 -- Present}}{Computer Vision Engineer}{\textsc{Ducere Technologies}}{Hyderabad, India}{}{Computer Vision Specialist. Embedded Firmware Programmer
+\cventry{\small{June 2014 -- Present}}{Computer Vision Engineer}{\textsc{Ducere Technologies}}{Hyderabad, India}{}{Computer Vision and Embedded Firmware Programmer
 \newline
 Detailed achievements:
 \begin{itemize}
-\item Worked on LeChal, the flagship product aimed at providing navigational freedom to the visually impaired 
-\item Implemented a system for image acquisition on STM32F4 ARM platform for image acquisition
-\item Designed the firmware architecture for a variant of the product.
+\item Worked on LeChal, the flagship product aimed at providing navigational cues to the visually impaired 
+\item Implemented a system for image acquisition and processing with Omnivision OV2640 on STM32F4 ARM platform for image acquisition
+\item Designed and implemented the firmware architecture for a variant of the product on STM32L0 Platform.
 \end{itemize}
 }
 
@@ -101,10 +101,18 @@ Detailed achievements:
 \begin{itemize}
 \item Designed and implemented a prototype for a computer vision system for obstacle avoidance using stereo-vision and saliency modelling. 
 \item Designed and implemented a Tesseract OCR based document analysis module for a prototype
-\item Improved an existing project for No-ball detection (Cricket) to work with a single camera instead of stereo vision using motion heuristics
+\item Developed a project for No-ball detection (Cricket) to work with a single camera using motion heuristics
 \end{itemize}
 }
 
+\cventry{\small{Jan 2013 -- May 2013}}{Student Instructor, Computer Vision}{\textsc{CTE, BITS Goa}}{Goa}{}{Instructor for Computer Vision, a vocational course for somphomores and juniors
+\newline
+Detailed achievements:
+\begin{itemize}
+\item Designed and taught computer vision course to a class of juniors and sophomores. 
+\item Examples were created in OpenCV to illustrate Feature Extraction, Machine Learning, Background Subtraction and Object Localization. 
+\end{itemize}
+}
 %------------------------------------------------
 
 %----------------------------------------------------------------------------------------
@@ -113,7 +121,7 @@ Detailed achievements:
 
 \section{Publications}
 
-\cventry{ACM SIGGRAPH 2014}{Selective Visualization of Anomalies in Fundus Images via Sparse and Low  Rank Decomposition}{}{}{}{ \textsc{A. Mahurkar,\textbf{ A. Joshi}, N. Nallapareddy, P. Reddy,A. Kadambi, M. Feigin, R. Raskar}}
+\cventry{ACM SIGGRAPH 2014}{Selective Visualization of Anomalies in Fundus Images via Sparse and Low  Rank Decomposition}{}{}{}{ \textit{A. Mahurkar,\textbf{ A. Joshi}, N. Nallapareddy, P. Reddy,A. Kadambi, M. Feigin, R. Raskar}}
 
 
 
@@ -126,17 +134,16 @@ Detailed achievements:
 
 \cventry{Jan 2014 -- Jun 2014}{Selective Visualization of Anomalies in Fundus Images via Sparse and Low  Rank Decomposition}{\textsc{In association with MIT Media Labs}}{}{}{
 \begin{itemize}
-\item Worked on segmenting and enhancing anomalous lesions in Retinal Fundus Images using Low Rank and Sparse decomposition 
+\item Worked on segmenting and enhancing anomalous lesions in retinal fundus images using rank and sparsity.
 \item Results were published as a poster in SIGGRAPH-2014
-\item Work on implementing the same for visual diagnostic devices is being undertaken.
 \end{itemize}
 }
 
 \cventry{Mar 2013 -- May 2014}{Leaf Recognition}{\textsc{BITS Goa}}{}{Advisor: Dr. Meenal Kowshik}{
 \begin{itemize}
-\item A Leaf recognition Algorithm based on feature clustering and bag of words. 
-\item It was further expanded to use VLAD and Fisher Vector modules
-\item Net accuracy obtained is 93.6\% which is comparable to state of the art methods using handcrafted features
+\item A Leaf recognition Algorithm based on feature clustering and bag of words 
+\item It was further expanded using developed VLAD and Fisher Vector modules
+\item Net accuracy obtained on the Flavia Dataset is 93.6\% which is comparable to state of the art methods using handcrafted features
 \end{itemize}
 }
 
@@ -149,11 +156,17 @@ Detailed achievements:
 
 \cventry{Oct 2012 -- Dec 2012}{Study and Implementation of Ant Colony Algorithms}{\textsc{BITS Goa}}{}{Advisor: Dr. Sangeeta Jaiswal}{
 \begin{itemize}
-\item The project deals with the studying the properties and variations of Ant Colony Algorithms. 
-\item Implemented various flavors of ACO using C++ Standard Template Libary and Python
+\item The project deals with the studying and implementing the properties and variations of Ant Colony Algorithms. 
+\item Implemented various flavors of ACO using C++ Standard Template Libary and Python for visualization.
 \end{itemize}
 }
 
+\cventry{Oct 2011 -- Dec 2012}{Virtual Canvas: A Hand Tracking System using Background Subtraction and Color Predicates}{\textsc{BITS Goa}}{}{}{
+\begin{itemize}
+\item Developed a system to track a user's hand using a laptop web-cam for drawing on the screen. 
+\item Implemented background subtraction and trained a color model for hand detection and tracking in OpenCV.
+\end{itemize}
+}
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
@@ -168,14 +181,13 @@ Detailed achievements:
 %----------------------------------------------------------------------------------------
 
 \section{Skills}
-\cvitem{Advanced}{C/C++}
-\cvitem{Intermediate}{\textsc{Python}, \LaTeX}
-\cvitem{Basic}{\textsc{Android Java}}
+\cvitem{Languages}{C/C++, Python, MATLAB, \LaTeX}
+
 \subsection{Packages and Tools}
-\cvitem{Computer Vision}{OpenCV, MATLAB, SimpleCV}
-\cvitem{Machine Learning}{scikit-learn, OpenCV ML libraries}
-\cvitem{Embedded Platforms}{STM32 ARM, EFM32, AVR}
-\cvitem{DSP Platforms}{DSK 6713}
+\cvitem{\small{Libraries}}{OpenCV,STL C++, SimpleCV, scikit-learn}
+\cvitem{\small{Embedded Platforms}}{STM32 ARM Cortex (M0+, M3, M4F), EFM32 (ARM Cortex M0+, M3), AVR Atmega}
+\cvitem{\small{DSP Platforms}}{DSK 6713}
+\cvitem{\small{Tools}}{IAR for ARM, Keil, gdb}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
